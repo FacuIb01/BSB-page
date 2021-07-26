@@ -1,0 +1,367 @@
+header {
+  background-color: black;
+  border-bottom: 1px solid red; }
+  header nav {
+    justify-self: flex-end; }
+    header nav img {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      height: 100px;
+      width: 100px;
+      transition: all 1s ease-in; }
+    header nav ul {
+      list-style-type: none; }
+      header nav ul li {
+        padding: 0.5rem;
+        border-left: 1px solid red;
+        transition: all 0.4s ease-out; }
+        header nav ul li:hover {
+          transform: translate(0px, -10px);
+          border-left: white 1px solid; }
+        header nav ul li a {
+          color: white;
+          text-decoration: none;
+          border-left: red; }
+
+.videos {
+  height: 33.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: white 0 1rem 1.5rem; }
+  .videos .divVideos {
+    margin-top: .1rem;
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+    border-radius: 5px; }
+    .videos .divVideos img {
+      height: 33.5rem; }
+
+.letras {
+  border: 1px solid red;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 10rem auto;
+  padding: 3rem;
+  width: 90%;
+  height: 20rem;
+  background-color: black;
+  box-shadow: white 0px 0px 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+  .letras .letras__div--h2 {
+    text-decoration: underline; }
+  .letras .letrasFlexBotones {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center; }
+    .letras .letrasFlexBotones .letrasDivFlex {
+      box-shadow: red 0 0 30px;
+      border: 1px solid red;
+      border-radius: 5px;
+      height: 50%;
+      width: 15%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+
+.conQuienTrabajamos {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px red solid; }
+  .conQuienTrabajamos .conQuienTrabajamosDiv {
+    overflow: auto;
+    width: 50%;
+    height: 65%;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: white 0px 0px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo" "texto";
+    justify-items: center;
+    align-items: center;
+    padding: 1rem; }
+    .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosLogo {
+      margin-left: 1.4rem;
+      grid-area: logo;
+      width: 95%;
+      height: 10rem; }
+    .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosP {
+      grid-area: texto;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      padding: 1rem; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8%;
+  border-bottom: 1px solid red; }
+  .contacto .divFormulario {
+    background-color: black;
+    border: 1px red solid;
+    border-radius: .7rem;
+    height: fit-content;
+    box-shadow: white 0rem 0rem 1rem;
+    padding: 1rem; }
+    .contacto .divFormulario .contactanos {
+      margin-top: .3rem;
+      text-align: center; }
+    .contacto .divFormulario .formulario {
+      display: grid;
+      row-gap: .5rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas: "nombre" "apellido" "email" "oferta" "notificaciones" "cuentanosTuOferta" "submit" "resett";
+      justify-items: flex-start; }
+      .contacto .divFormulario .formulario div {
+        margin: .5rem; }
+        .contacto .divFormulario .formulario div .nombre {
+          grid-area: nombre; }
+        .contacto .divFormulario .formulario div .apellido {
+          grid-area: apellido; }
+        .contacto .divFormulario .formulario div .email {
+          grid-area: email; }
+        .contacto .divFormulario .formulario div .oferta {
+          grid-area: oferta; }
+        .contacto .divFormulario .formulario div .notificaciones {
+          grid-area: notificaciones; }
+        .contacto .divFormulario .formulario div .cuentanosTuOFerta {
+          grid-area: cuentanosTuOferta; }
+        .contacto .divFormulario .formulario div .submit {
+          grid-area: submit; }
+        .contacto .divFormulario .formulario div .reset {
+          grid-area: resett; }
+
+footer {
+  border-top: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  footer .footerDiv {
+    margin: 50px 0;
+    text-align: center; }
+    footer .footerDiv a {
+      color: red; }
+
+.proximasFechas {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid red; }
+  .proximasFechas .proximasFechasDiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: white 0px 0px 25px;
+    background-color: black; }
+
+.estiloCaja, .quienesSomos .fackuDiv, .quienesSomos .lechuDiv {
+  border: 1px solid red;
+  background-color: black;
+  box-shadow: white 0 0 25px;
+  border-radius: 5px;
+  overflow: auto;
+  margin: 2rem;
+  padding: 1rem;
+  width: 25rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
+  justify-items: center;
+  align-items: center; }
+
+.quienesSomos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 12.5%;
+  border-bottom: 1px solid red;
+  text-align: center; }
+  .quienesSomos .fackuDiv {
+    grid-template-areas: "facku" "descripcion"; }
+    .quienesSomos .fackuDiv img {
+      grid-area: facku;
+      width: 90%;
+      height: 100%; }
+      .quienesSomos .fackuDiv img p {
+        grid-area: descripcion; }
+  .quienesSomos .lechuDiv {
+    grid-template-areas: "lechu" "descripcionLechu"; }
+    .quienesSomos .lechuDiv img {
+      grid-area: lechu;
+      width: 80%;
+      height: 100%; }
+      .quienesSomos .lechuDiv img p {
+        grid-area: descripcionLechu; }
+
+.error {
+  height: 80vh; }
+  .error .errorDiv {
+    width: 50%;
+    height: 80%;
+    margin: 5rem auto;
+    border: 1px solid red;
+    border-radius: 1rem;
+    background-color: black;
+    box-shadow: white 0 0 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .error .errorDiv h2 {
+      text-decoration: underline;
+      text-shadow: white 0 0 4px; }
+    .error .errorDiv a img {
+      height: 200px;
+      width: 200px; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    header nav {
+      margin-bottom: 1rem; }
+      header nav ul li {
+        box-shadow: red 0 0 15px;
+        border: solid 1px red;
+        margin-top: 1rem; }
+        header nav ul li:hover {
+          box-shadow: white 0 0 15px;
+          border: white 1px solid; }
+  .videos {
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 768px) {
+  header nav img {
+    margin: 0;
+    width: 8rem;
+    height: 8rem; }
+  header nav ul li {
+    margin: 1rem;
+    border-radius: 3px;
+    border: 1px solid red;
+    box-shadow: red 0 0 25px; }
+    header nav ul li:hover {
+      border: white 1px solid;
+      box-shadow: white 0 0 25px; }
+  .videos {
+    height: 30.44rem;
+    flex-wrap: wrap;
+    box-shadow: white 0px 20px 25px; }
+    .videos .divVideos {
+      margin-top: 0;
+      width: 100%;
+      height: 5rem;
+      background-color: black;
+      border-radius: 5px; }
+      .videos .divVideos img {
+        height: 31.44rem; }
+  .letras {
+    height: 70rem;
+    border-radius: 10px; }
+    .letras .letrasFlexBotones {
+      margin: 5rem;
+      border: none;
+      height: 80%;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .letras .letrasFlexBotones .letrasDivFlex {
+        box-shadow: red 0 0 40px;
+        width: 10rem;
+        height: 5rem; }
+  .quienesSomos {
+    flex-wrap: wrap; }
+    .quienesSomos .lechuDiv {
+      margin: 0; }
+      .quienesSomos .lechuDiv img {
+        width: 10rem; }
+    .quienesSomos .fackuDiv {
+      margin: 0%;
+      width: 20rem;
+      margin-bottom: 2rem; }
+      .quienesSomos .fackuDiv img {
+        height: 15rem; }
+  .conQuienTrabajamos .conQuienTrabajamosDiv {
+    width: 20rem;
+    margin: 0%;
+    padding: 0; }
+    .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosLogo {
+      margin: 0;
+      width: 18rem; }
+  footer {
+    height: 30rem;
+    display: flex;
+    flex-direction: column; }
+  .error .errorDiv {
+    width: 90%;
+    height: 90%; }
+    .error .errorDiv a img {
+      height: 150px;
+      width: 150px; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.aBlanco:hover {
+  color: white; }
+
+.bgcBlack {
+  background-color: black; }
+  .bgcBlack:hover {
+    background-color: white;
+    color: black; }
+
+.backBlack {
+  background-color: black; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-image: url("../imagenes/fondo.jpg"); }

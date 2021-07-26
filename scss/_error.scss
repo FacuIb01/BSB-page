@@ -1,0 +1,26 @@
+.error{
+    height: 80vh;
+    .errorDiv{
+        width: 50%;
+        height: 80%;
+        margin: 5rem auto;
+        border: 1px solid red;
+        border-radius: 1rem;
+        background-color: black;
+        box-shadow:white 0 0 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        h2{
+            text-decoration: underline;
+            text-shadow: white 0 0 4px;
+        }
+        a img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

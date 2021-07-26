@@ -1,0 +1,16 @@
+footer{
+    border-top: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    .footerDiv{
+        margin: 50px 0;
+        text-align: center;
+        a{
+            color: red;
+        }
+    }
+}

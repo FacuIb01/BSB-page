@@ -1,0 +1,69 @@
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    border-bottom: 1px solid red;
+    .divFormulario{
+        background-color: black;
+        border: 1px red solid;
+        border-radius: .7rem;
+        height: fit-content;
+        box-shadow: white 0rem 0rem 1rem;
+        padding: 1rem;
+        .contactanos{
+            margin-top: .3rem;
+            text-align: center;
+        }
+        .formulario{
+            display: grid;
+            row-gap: .5rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr) ;
+            grid-template-areas: 
+            "nombre"
+            "apellido"
+            "email"
+            "oferta"
+            "notificaciones"
+            "cuentanosTuOferta"
+            "submit"
+            "resett";
+            justify-items: flex-start;
+            div{
+                margin: .5rem;
+                .nombre{
+                    grid-area: nombre;
+                }
+                .apellido{
+                    grid-area: apellido;
+                }
+                .email{
+                    grid-area: email;
+                }
+                .oferta{
+                    grid-area: oferta;
+                }
+                .notificaciones{
+                    grid-area: notificaciones;
+                }
+                .cuentanosTuOFerta{
+                    grid-area: cuentanosTuOferta;
+                }
+                .submit{
+                    grid-area: submit;
+                }
+                .reset{
+                    grid-area: resett;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

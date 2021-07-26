@@ -1,0 +1,28 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+        nav{
+            margin-bottom: 1rem;
+            ul{
+                li{
+                    box-shadow: red 0 0 15px;
+                    border:solid 1px red;
+                    margin-top: 1rem;
+                    &:hover{
+                        box-shadow: white 0 0 15px;
+                        border: white 1px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    .videos{
+        flex-wrap: wrap;
+    }
+
+
+}

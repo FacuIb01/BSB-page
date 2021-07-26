@@ -1,0 +1,60 @@
+.estiloCaja{
+    border: 1px solid red;
+    background-color: black;
+    box-shadow: white 0 0 25px;
+    border-radius: 5px;
+    overflow: auto;
+    margin: 2rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    justify-items: center;
+    align-items: center;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 12.5%;
+    border-bottom: 1px solid red;
+    text-align: center;
+    .fackuDiv{
+        @extend .estiloCaja;
+        grid-template-areas: "facku"
+        "descripcion";
+        img{
+            grid-area: facku;
+            width: 90%;
+            height: 100%;
+            p{
+                grid-area: descripcion;
+            }
+        }
+    }
+    .lechuDiv{
+        @extend .estiloCaja;
+        grid-template-areas: "lechu"
+        "descripcionLechu";
+        img{
+            grid-area: lechu;
+            width: 80%;
+            height: 100%;
+            p{
+                grid-area: descripcionLechu;
+            }
+        }
+    }
+}
+
+
+
+
+
+

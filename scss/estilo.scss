@@ -1,0 +1,68 @@
+@import "header";
+@import "index";
+@import "conquientrabajamos";
+@import "contacto";
+@import "footer";
+@import "proximasfechas";
+@import "quienessomos";
+@import "error";
+@import "tablet";
+@import "celular";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.aBlanco:hover{
+    color: white;
+}
+
+.bgcBlack{
+    background-color: black;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.backBlack{
+    background-color: black;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-image: url("../imagenes/fondo.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
