@@ -24,7 +24,7 @@ header {
           border-left: red; }
 
 .videos {
-  height: 33.5rem;
+  height: 33rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@ header {
     background-color: black;
     border-radius: 5px; }
     .videos .divVideos img {
-      height: 33.5rem; }
+      height: 33.1rem; }
 
 .letras {
   border: 1px solid red;
@@ -162,28 +162,35 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   text-align: center; }
+  footer .svg {
+    width: 3rem; }
+    footer .svg .colorSvg {
+      fill: white;
+      transition: all .5s ease; }
+      footer .svg .colorSvg:hover {
+        fill: red; }
   footer .footerDiv {
-    margin: 50px 0;
-    text-align: center; }
-    footer .footerDiv a {
-      color: red; }
+    margin: 50px 0; }
 
-.proximasFechas {
-  height: 30rem;
+.galeria {
+  padding: 3rem 0;
+  height: fit-content;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-bottom: 1px solid red; }
-  .proximasFechas .proximasFechasDiv {
+  .galeria .galeriaDiv {
+    margin: 2rem 0;
+    width: 90%;
     color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     padding: 1rem;
@@ -191,6 +198,32 @@ footer {
     border-radius: 5px;
     box-shadow: white 0px 0px 25px;
     background-color: black; }
+    .galeria .galeriaDiv .tituloGaleria h2 {
+      text-decoration: underline; }
+    .galeria .galeriaDiv .galeriaImagenes {
+      margin-top: 1rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center; }
+      .galeria .galeriaDiv .galeriaImagenes div {
+        border-radius: 10px;
+        border: 1px solid red;
+        box-shadow: red 0 0 20px;
+        transition: all 1s ease; }
+        .galeria .galeriaDiv .galeriaImagenes div:hover {
+          border: 1px solid white;
+          box-shadow: white 0 0 20px; }
+        .galeria .galeriaDiv .galeriaImagenes div img {
+          height: 20rem;
+          border-radius: 10px; }
+        .galeria .galeriaDiv .galeriaImagenes div .resizePhoto {
+          height: 20rem;
+          width: 15rem; }
 
 .estiloCaja, .quienesSomos .fackuDiv, .quienesSomos .lechuDiv {
   border: 1px solid red;
@@ -274,7 +307,9 @@ footer {
           box-shadow: white 0 0 15px;
           border: white 1px solid; }
   .videos {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .galeria .galeriaDiv .galeriaImagenes div {
+    margin: 1rem 0; } }
 
 @media only screen and (max-width: 768px) {
   header nav img {
@@ -334,15 +369,17 @@ footer {
       margin: 0;
       width: 18rem; }
   footer {
-    height: 30rem;
-    display: flex;
-    flex-direction: column; }
+    height: 10rem; }
   .error .errorDiv {
     width: 90%;
     height: 90%; }
     .error .errorDiv a img {
       height: 150px;
-      width: 150px; } }
+      width: 150px; }
+  .galeria .galeriaDiv .galeriaImagenes div {
+    margin: 1rem 0; }
+    .galeria .galeriaDiv .galeriaImagenes div .resizePhotoMovile {
+      width: 15rem; } }
 
 * {
   margin: 0px;

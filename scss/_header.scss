@@ -18,7 +18,8 @@ header{
                 transition: all 0.4s ease-out;
                 &:hover{
                     transform: translate(0px, -10px);
-                    border-left: white 1px solid;}
+                    border-left: white 1px solid;
+                }
                 a{
                     color: white;
                     text-decoration: none;

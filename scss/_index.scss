@@ -9,7 +9,7 @@ $letras: map-get($anchos, letras);
 $botonesLetras: map-get($anchos, botonesLetras);
 
 .videos{
-    height: 33.5rem;
+    height: 33rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ $botonesLetras: map-get($anchos, botonesLetras);
         background-color: black;
         border-radius: 5px;
         img{
-            height: 33.5rem;
+            height: 33.1rem;
         }
     }
 }

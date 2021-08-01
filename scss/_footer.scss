@@ -6,11 +6,17 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    .svg{
+        width: 3rem;
+        .colorSvg{
+            fill: white;
+            transition: all .5s ease;
+            &:hover{
+                fill: red;
+            }
+        }
+    }
     .footerDiv{
         margin: 50px 0;
-        text-align: center;
-        a{
-            color: red;
-        }
     }
 }

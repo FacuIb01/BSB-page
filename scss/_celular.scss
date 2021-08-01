@@ -89,9 +89,7 @@
     }
     
     footer{
-        height: 30rem;
-        display: flex;
-        flex-direction: column;
+        height: 10rem;
     }
 
     .error{
@@ -101,6 +99,19 @@
             a img{
                 height: 150px;
                 width: 150px;
+            }
+        }
+    }
+
+    .galeria{
+        .galeriaDiv{
+            .galeriaImagenes{
+                div{
+                    margin: 1rem 0;
+                    .resizePhotoMovile{
+                        width: 15rem;
+                    }
+                }
             }
         }
     }
