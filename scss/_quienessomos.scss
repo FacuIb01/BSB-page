@@ -7,7 +7,7 @@
     margin: 2rem;
     padding: 1rem;
     width: 25rem;
-    height: 30rem;
+    height: 35rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
@@ -32,7 +32,7 @@
         img{
             grid-area: facku;
             width: 90%;
-            height: 100%;
+            height: 90%;
             p{
                 grid-area: descripcion;
             }
@@ -44,8 +44,8 @@
         "descripcionLechu";
         img{
             grid-area: lechu;
-            width: 80%;
-            height: 100%;
+            width: 70%;
+            height: 90%;
             p{
                 grid-area: descripcionLechu;
             }
