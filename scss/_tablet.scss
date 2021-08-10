@@ -21,7 +21,13 @@
     }
 
     .videos{
-        flex-wrap: wrap;
+        height: 34rem;
+        .divVideos{
+            height: 34.7rem;
+            img{
+                height: 34.7rem;
+            }
+        }
     }
 
     
@@ -38,7 +44,6 @@
     .quienesSomos{
         .lechuDiv{
                 img{
-                width: 10rem;
                 height: 21rem;
             }
         }

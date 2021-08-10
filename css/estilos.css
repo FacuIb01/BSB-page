@@ -6,8 +6,7 @@ header {
     header nav img {
       margin-top: 1rem;
       margin-left: 2rem;
-      height: 100px;
-      width: 100px;
+      height: 70px;
       transition: all 1s ease-in; }
     header nav ul {
       list-style-type: none; }
@@ -24,20 +23,20 @@ header {
           border-left: red; }
 
 .videos {
-  height: 33rem;
+  height: 35rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: white 0 1rem 1.5rem; }
+  box-shadow: white 0 10px 10px; }
   .videos .divVideos {
     margin-top: .1rem;
     width: 100%;
-    height: 5rem;
+    height: 35rem;
     background-color: black;
     border-radius: 5px; }
     .videos .divVideos img {
-      height: 33.1rem; }
+      height: 35rem; }
 
 .letras {
   border: 1px solid red;
@@ -77,17 +76,19 @@ header {
       flex-wrap: wrap; }
 
 .conQuienTrabajamos {
+  padding: 5%;
   width: 100%;
-  height: 40rem;
+  height: fit-content;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  row-gap: 5rem;
   border-bottom: 1px red solid; }
   .conQuienTrabajamos .conQuienTrabajamosDiv {
-    overflow: auto;
+    overflow: hidden;
     width: 50%;
-    height: 65%;
+    height: 30rem;
     background-color: black;
     border: 1px solid red;
     border-radius: 10px;
@@ -102,14 +103,45 @@ header {
     .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosLogo {
       margin-left: 1.4rem;
       grid-area: logo;
-      width: 95%;
-      height: 10rem; }
+      width: 95%; }
     .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosP {
       grid-area: texto;
       text-align: center;
       justify-items: center;
       align-items: center;
       padding: 1rem; }
+  .conQuienTrabajamos .trabajaConNosotros {
+    overflow: hidden;
+    width: 50%;
+    height: 20rem;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: white 0px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 2rem; }
+    .conQuienTrabajamos .trabajaConNosotros .contactanosLink {
+      width: 15rem;
+      height: 5rem;
+      border: red 1px solid;
+      border-radius: 10px;
+      box-shadow: red 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s ease; }
+      .conQuienTrabajamos .trabajaConNosotros .contactanosLink:hover {
+        box-shadow: white 0 0 10px;
+        border: white 1px solid; }
+      .conQuienTrabajamos .trabajaConNosotros .contactanosLink a {
+        text-decoration: none;
+        color: white; }
 
 .contacto {
   display: flex;
@@ -117,7 +149,7 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: 8%;
+  padding: 2%;
   border-bottom: 1px solid red; }
   .contacto .divFormulario {
     background-color: black;
@@ -176,9 +208,10 @@ header {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center; }
-    .contacto .contactoExtras ul li {
-      justify-self: flex-start;
-      list-style-type: none; }
+    .contacto .contactoExtras ul {
+      justify-self: flex-start; }
+      .contacto .contactoExtras ul li {
+        list-style-type: none; }
 
 footer {
   border-top: 1px solid red;
@@ -235,7 +268,8 @@ footer {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
-      align-content: center; }
+      align-content: center;
+      row-gap: 1rem; }
       .galeria .galeriaDiv .galeriaImagenes div {
         border-radius: 10px;
         border: 1px solid red;
@@ -248,15 +282,15 @@ footer {
           height: 20rem;
           border-radius: 10px; }
         .galeria .galeriaDiv .galeriaImagenes div .resizePhoto {
-          height: 20rem;
-          width: 15rem; }
+          height: 20rem; }
+        .galeria .galeriaDiv .galeriaImagenes div .achicarImg {
+          width: 14rem; }
 
-.estiloCaja, .quienesSomos .fackuDiv, .quienesSomos .lechuDiv {
+.estiloCaja, .quienesSomos .contenedorIntegrantes .fackuDiv, .quienesSomos .contenedorIntegrantes .lechuDiv {
   border: 1px solid red;
   background-color: black;
   box-shadow: white 0 0 25px;
   border-radius: 5px;
-  overflow: auto;
   margin: 2rem;
   padding: 1rem;
   width: 25rem;
@@ -265,34 +299,63 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: 70% 30%;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
 
 .quienesSomos {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 12.5%;
+  row-gap: 2rem;
+  padding: 0%;
   border-bottom: 1px solid red;
   text-align: center; }
-  .quienesSomos .fackuDiv {
-    grid-template-areas: "facku" "descripcion"; }
-    .quienesSomos .fackuDiv img {
-      grid-area: facku;
-      width: 90%;
-      height: 90%; }
-      .quienesSomos .fackuDiv img p {
-        grid-area: descripcion; }
-  .quienesSomos .lechuDiv {
-    grid-template-areas: "lechu" "descripcionLechu"; }
-    .quienesSomos .lechuDiv img {
-      grid-area: lechu;
-      width: 70%;
-      height: 90%; }
-      .quienesSomos .lechuDiv img p {
-        grid-area: descripcionLechu; }
+  .quienesSomos .contenedorIntegrantes {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center; }
+    .quienesSomos .contenedorIntegrantes .fackuDiv {
+      grid-template-areas: "facku" "descripcion"; }
+      .quienesSomos .contenedorIntegrantes .fackuDiv img {
+        grid-area: facku;
+        height: 90%; }
+        .quienesSomos .contenedorIntegrantes .fackuDiv img p {
+          grid-area: descripcion; }
+    .quienesSomos .contenedorIntegrantes .lechuDiv {
+      grid-template-areas: "lechu" "descripcionLechu"; }
+      .quienesSomos .contenedorIntegrantes .lechuDiv img {
+        grid-area: lechu;
+        height: 90%; }
+        .quienesSomos .contenedorIntegrantes .lechuDiv img p {
+          grid-area: descripcionLechu; }
+  .quienesSomos .bsbQuienesSomos {
+    width: 74%;
+    padding: 2rem;
+    height: fit-content;
+    margin-bottom: 5rem;
+    background-color: black;
+    border: red 1px solid;
+    border-radius: 10px;
+    box-shadow: white 0 0 25px; }
+    .quienesSomos .bsbQuienesSomos img {
+      margin-bottom: 1rem;
+      height: 8rem;
+      transition: all .5s ease; }
+      .quienesSomos .bsbQuienesSomos img:hover {
+        transform: translate(0, -10px); }
+    .quienesSomos .bsbQuienesSomos h2 {
+      text-shadow: white 0 0 5px; }
+    .quienesSomos .bsbQuienesSomos p {
+      font-size: 1.5rem; }
 
 .error {
   height: 80vh; }
@@ -314,8 +377,7 @@ footer {
       text-decoration: underline;
       text-shadow: white 0 0 4px; }
     .error .errorDiv a img {
-      height: 200px;
-      width: 200px; }
+      height: 200px; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   header {
@@ -333,18 +395,20 @@ footer {
           box-shadow: white 0 0 15px;
           border: white 1px solid; }
   .videos {
-    flex-wrap: wrap; }
+    height: 34rem; }
+    .videos .divVideos {
+      height: 34.7rem; }
+      .videos .divVideos img {
+        height: 34.7rem; }
   .galeria .galeriaDiv .galeriaImagenes div {
     margin: 1rem 0; }
   .quienesSomos .lechuDiv img {
-    width: 10rem;
     height: 21rem; } }
 
 @media only screen and (max-width: 768px) {
   header nav img {
     margin: 0;
-    width: 8rem;
-    height: 8rem; }
+    height: 5rem; }
   header nav ul li {
     margin: 1rem;
     border-radius: 3px;
@@ -354,17 +418,17 @@ footer {
       border: white 1px solid;
       box-shadow: white 0 0 25px; }
   .videos {
-    height: 30.44rem;
+    height: 33.4rem;
     flex-wrap: wrap;
     box-shadow: white 0px 20px 25px; }
     .videos .divVideos {
       margin-top: 0;
       width: 100%;
-      height: 5rem;
+      height: 34.3rem;
       background-color: black;
       border-radius: 5px; }
       .videos .divVideos img {
-        height: 31.44rem; }
+        height: 34.3rem; }
   .letras {
     height: 70rem;
     border-radius: 10px; }
@@ -378,38 +442,44 @@ footer {
         box-shadow: red 0 0 40px;
         width: 10rem;
         height: 5rem; }
-  .quienesSomos {
-    flex-wrap: wrap; }
-    .quienesSomos .lechuDiv {
-      margin: 0; }
-      .quienesSomos .lechuDiv img {
-        width: 10rem;
-        height: 20rem; }
-    .quienesSomos .fackuDiv {
-      margin: 0%;
-      width: 20rem;
-      margin-bottom: 2rem; }
-      .quienesSomos .fackuDiv img {
-        height: 15rem; }
-  .conQuienTrabajamos .conQuienTrabajamosDiv {
+  .quienesSomos .contenedorIntegrantes .lechuDiv {
+    width: 20rem; }
+    .quienesSomos .contenedorIntegrantes .lechuDiv img {
+      height: 20rem; }
+  .quienesSomos .contenedorIntegrantes .fackuDiv {
     width: 20rem;
-    margin: 0%;
+    margin-bottom: 2rem; }
+    .quienesSomos .contenedorIntegrantes .fackuDiv img {
+      height: 15rem; }
+  .quienesSomos .bsbQuienesSomos {
+    width: 90%; }
+  .conQuienTrabajamos .conQuienTrabajamosDiv {
+    margin-top: 1rem;
+    width: 20rem;
     padding: 0; }
     .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosLogo {
       margin: 0;
       width: 18rem; }
+  .conQuienTrabajamos .trabajaConNosotros {
+    width: 100%;
+    margin-bottom: 1rem; }
   footer {
     height: 10rem; }
   .error .errorDiv {
     width: 90%;
     height: 90%; }
     .error .errorDiv a img {
-      height: 150px;
-      width: 150px; }
+      height: 150px; }
   .galeria .galeriaDiv .galeriaImagenes div {
     margin: 1rem 0; }
     .galeria .galeriaDiv .galeriaImagenes div .resizePhotoMovile {
-      width: 15rem; } }
+      width: 100%; }
+    .galeria .galeriaDiv .galeriaImagenes div .resizePhoto {
+      width: 100%; }
+  .contacto {
+    padding: 2rem; }
+    .contacto .contactoExtras {
+      width: 100%; } }
 
 * {
   margin: 0px;

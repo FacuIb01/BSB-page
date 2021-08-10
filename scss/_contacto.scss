@@ -12,7 +12,7 @@
     flex-wrap: nowrap;
     justify-content:center;
     align-items:center;
-    padding: 8%;
+    padding: 2%;
     border-bottom: 1px solid red;
     .divFormulario{
         @include estiloCaja;
@@ -83,8 +83,8 @@
         justify-content: center;
         align-items: center;
         ul{
+            justify-self: flex-start;
             li{
-                justify-self: flex-start;
             list-style-type: none;
             }
         }

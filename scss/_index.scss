@@ -9,20 +9,20 @@ $letras: map-get($anchos, letras);
 $botonesLetras: map-get($anchos, botonesLetras);
 
 .videos{
-    height: 33rem;
+    height: 35rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: white 0 1rem 1.5rem;
+    box-shadow: white 0 10px 10px;
     .divVideos{
         margin-top: .1rem;
         width: $divVideos;
-        height: 5rem;
+        height: 35rem;
         background-color: black;
         border-radius: 5px;
         img{
-            height: 33.1rem;
+            height: 35rem;
         }
     }
 }

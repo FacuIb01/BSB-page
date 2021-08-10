@@ -3,8 +3,7 @@
         nav{
             img{
                 margin: 0;
-                width: 8rem;
-                height: 8rem;
+                height: 5rem;
             }
             ul{
                 li{
@@ -22,17 +21,17 @@
     }
 
     .videos{
-        height: 30.44rem;
+        height: 33.4rem;
         flex-wrap: wrap;
         box-shadow: white 0px 20px 25px;
         .divVideos{
             margin-top: 0;
             width: 100%;
-            height: 5rem;
+            height: 34.3rem;
             background-color: black;
             border-radius: 5px;
             img{
-                height: 31.44rem;
+                height: 34.3rem;
             }
         }
         }
@@ -56,16 +55,14 @@
 
 
     .quienesSomos{
-        flex-wrap: wrap;
+        .contenedorIntegrantes{
         .lechuDiv{
-            margin: 0;
+            width: 20rem;
                 img{
-                width: 10rem;
                 height: 20rem;
             }
         }
         .fackuDiv{
-            margin: 0%;
             width: 20rem;
             margin-bottom: 2rem;
             img{
@@ -73,19 +70,27 @@
             }
         }
         }
+        .bsbQuienesSomos{
+            width: 90%;
+        }
+    }
 
 
 
 
     .conQuienTrabajamos{
     .conQuienTrabajamosDiv{
+        margin-top: 1rem;
         width: 20rem;
-        margin: 0%;
         padding: 0;
             .conQuienTrabajamosLogo{
                 margin: 0;
                 width: 18rem;
             }
+        }
+        .trabajaConNosotros{
+            width: 100%;
+            margin-bottom: 1rem;
         }
     }
     
@@ -99,7 +104,6 @@
             height: 90%;
             a img{
                 height: 150px;
-                width: 150px;
             }
         }
     }
@@ -110,10 +114,19 @@
                 div{
                     margin: 1rem 0;
                     .resizePhotoMovile{
-                        width: 15rem;
+                        width: 100%;
+                    }
+                    .resizePhoto{
+                        width: 100%;
                     }
                 }
             }
+        }
+    }
+    .contacto{
+        padding: 2rem;
+        .contactoExtras{
+            width: 100%;
         }
     }
 }

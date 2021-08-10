@@ -39,6 +39,7 @@
             justify-content: space-evenly;
             align-items: center;
             align-content: center;
+            row-gap: 1rem;
             div{
                 border-radius: 10px;
                 border: 1px solid red;
@@ -54,7 +55,9 @@
                 }
                 .resizePhoto{
                     height: 20rem;
-                    width: 15rem;
+                }
+                .achicarImg{
+                    width: 14rem;
                 }
             }
         }

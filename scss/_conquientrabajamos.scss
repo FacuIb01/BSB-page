@@ -1,19 +1,25 @@
+@mixin estiloCajas ($altura) {
+    overflow: hidden;
+    width: 50%;
+    height: $altura;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: white 0px 0px 25px;
+}
+
 .conQuienTrabajamos{
+    padding: 5%;
     width: 100%;
-    height: 40rem;
+    height: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    row-gap: 5rem;
     border-bottom: 1px red solid;
     .conQuienTrabajamosDiv{
-        overflow: auto;
-        width: 50%;
-        height: 65%;
-        background-color: black;
-        border: 1px solid red;
-        border-radius: 10px;
-        box-shadow: white 0px 0px 25px;
+        @include estiloCajas(30rem);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -27,7 +33,6 @@
             margin-left: 1.4rem;
             grid-area: logo;
             width: 95%;
-            height: 10rem;
         }
         .conQuienTrabajamosP{
             grid-area: texto;
@@ -35,6 +40,36 @@
             justify-items: center;
             align-items: center;
             padding: 1rem;
+        }
+    }
+    .trabajaConNosotros{
+        @include estiloCajas(20rem);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        row-gap: 2rem;
+        .contactanosLink{
+            width: 15rem;
+            height: 5rem;
+            border: red 1px solid;
+            border-radius: 10px;
+            box-shadow: red 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition:all .5s ease ;
+            &:hover{
+                box-shadow: white 0 0 10px;
+                border: white 1px solid;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
