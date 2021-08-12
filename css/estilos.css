@@ -38,6 +38,11 @@ header {
     .videos .divVideos img {
       height: 35rem; }
 
+.flechaMovile {
+  display: none; }
+  .flechaMovile .colorFlecha {
+    display: none; }
+
 .letras {
   border: 1px solid red;
   border-top-left-radius: 50px;
@@ -286,7 +291,7 @@ footer {
         .galeria .galeriaDiv .galeriaImagenes div .achicarImg {
           width: 14rem; }
 
-.estiloCaja, .quienesSomos .contenedorIntegrantes .fackuDiv, .quienesSomos .contenedorIntegrantes .lechuDiv {
+.estiloCaja {
   border: 1px solid red;
   background-color: black;
   box-shadow: white 0 0 25px;
@@ -311,7 +316,6 @@ footer {
   align-items: center;
   align-content: center;
   row-gap: 2rem;
-  padding: 0%;
   border-bottom: 1px solid red;
   text-align: center; }
   .quienesSomos .contenedorIntegrantes {
@@ -324,19 +328,51 @@ footer {
     align-items: center;
     align-content: center; }
     .quienesSomos .contenedorIntegrantes .fackuDiv {
-      grid-template-areas: "facku" "descripcion"; }
-      .quienesSomos .contenedorIntegrantes .fackuDiv img {
-        grid-area: facku;
-        height: 90%; }
-        .quienesSomos .contenedorIntegrantes .fackuDiv img p {
-          grid-area: descripcion; }
+      border: 1px solid red;
+      background-color: black;
+      box-shadow: white 0 0 25px;
+      border-radius: 5px;
+      margin: 2rem;
+      padding: 1rem;
+      width: 25rem;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center; }
+      .quienesSomos .contenedorIntegrantes .fackuDiv a {
+        height: 20rem; }
+        .quienesSomos .contenedorIntegrantes .fackuDiv a img {
+          height: 20rem; }
+      .quienesSomos .contenedorIntegrantes .fackuDiv h2 {
+        text-decoration: underline;
+        text-shadow: white 0 0 10px; }
+      .quienesSomos .contenedorIntegrantes .fackuDiv p {
+        grid-area: descripcion; }
     .quienesSomos .contenedorIntegrantes .lechuDiv {
-      grid-template-areas: "lechu" "descripcionLechu"; }
-      .quienesSomos .contenedorIntegrantes .lechuDiv img {
-        grid-area: lechu;
-        height: 90%; }
-        .quienesSomos .contenedorIntegrantes .lechuDiv img p {
-          grid-area: descripcionLechu; }
+      border: 1px solid red;
+      background-color: black;
+      box-shadow: white 0 0 25px;
+      border-radius: 5px;
+      margin: 2rem;
+      padding: 1rem;
+      width: 25rem;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center; }
+      .quienesSomos .contenedorIntegrantes .lechuDiv a {
+        height: 20rem; }
+        .quienesSomos .contenedorIntegrantes .lechuDiv a img {
+          height: 20rem; }
+      .quienesSomos .contenedorIntegrantes .lechuDiv h2 {
+        text-shadow: white 0 0 10px;
+        text-decoration: underline; }
   .quienesSomos .bsbQuienesSomos {
     width: 74%;
     padding: 2rem;
@@ -395,11 +431,11 @@ footer {
           box-shadow: white 0 0 15px;
           border: white 1px solid; }
   .videos {
-    height: 34rem; }
+    height: 40rem; }
     .videos .divVideos {
-      height: 34.7rem; }
+      height: 40rem; }
       .videos .divVideos img {
-        height: 34.7rem; }
+        height: 40rem; }
   .galeria .galeriaDiv .galeriaImagenes div {
     margin: 1rem 0; }
   .quienesSomos .lechuDiv img {
@@ -408,7 +444,7 @@ footer {
 @media only screen and (max-width: 768px) {
   header nav img {
     margin: 0;
-    height: 5rem; }
+    height: 4rem; }
   header nav ul li {
     margin: 1rem;
     border-radius: 3px;
@@ -418,18 +454,39 @@ footer {
       border: white 1px solid;
       box-shadow: white 0 0 25px; }
   .videos {
-    height: 33.4rem;
+    height: 27rem;
     flex-wrap: wrap;
-    box-shadow: white 0px 20px 25px; }
+    box-shadow: white 0px 10px 25px; }
     .videos .divVideos {
       margin-top: 0;
       width: 100%;
-      height: 34.3rem;
+      height: 27rem;
       background-color: black;
       border-radius: 5px; }
       .videos .divVideos img {
-        height: 34.3rem; }
+        height: 27rem; }
+  .flechaMovile {
+    width: 100%;
+    margin: 3rem auto;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .flechaMovile a {
+      width: 100%; }
+      .flechaMovile a .colorFlecha {
+        width: 100%;
+        display: unset;
+        fill: white;
+        height: 5rem;
+        transition: all .4s ease; }
+        .flechaMovile a .colorFlecha:hover {
+          fill: red; }
   .letras {
+    margin: 5rem auto;
     height: 70rem;
     border-radius: 10px; }
     .letras .letrasFlexBotones {

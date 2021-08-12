@@ -27,6 +27,12 @@ $botonesLetras: map-get($anchos, botonesLetras);
     }
 }
 
+.flechaMovile{
+    display: none;
+    .colorFlecha{
+        display: none;
+    }
+}
 
 
 

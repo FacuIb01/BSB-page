@@ -3,7 +3,7 @@
         nav{
             img{
                 margin: 0;
-                height: 5rem;
+                height: 4rem;
             }
             ul{
                 li{
@@ -21,22 +21,48 @@
     }
 
     .videos{
-        height: 33.4rem;
+        height: 27rem;
         flex-wrap: wrap;
-        box-shadow: white 0px 20px 25px;
+        box-shadow: white 0px 10px 25px;
         .divVideos{
             margin-top: 0;
             width: 100%;
-            height: 34.3rem;
+            height: 27rem;
             background-color: black;
             border-radius: 5px;
             img{
-                height: 34.3rem;
+                height: 27rem;
             }
         }
         }
 
+        .flechaMovile{
+            width: 100%;
+            margin: 3rem auto;
+            height: 5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            a{
+                width: 100%;
+                .colorFlecha{
+                    width: 100%;
+                    display: unset;
+                    fill: white;
+                    height: 5rem;
+                    transition: all .4s ease;
+                    &:hover{
+                        fill: red;
+                    }
+                }
+            }
+        }
+
     .letras{
+        margin: 5rem auto;
         height: 70rem;
         border-radius: 10px;
         .letrasFlexBotones{

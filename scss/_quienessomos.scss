@@ -24,7 +24,6 @@
     align-items: center;
     align-content: center;
     row-gap: 2rem;
-    padding: 0%;
     border-bottom: 1px solid red;
     text-align: center;
     .contenedorIntegrantes{
@@ -37,27 +36,58 @@
         align-items: center;
         align-content: center;
         .fackuDiv{
-            @extend .estiloCaja;
-            grid-template-areas: "facku"
-            "descripcion";
-            img{
-                grid-area: facku;
-                height: 90%;
-                p{
-                    grid-area: descripcion;
+            border: 1px solid red;
+            background-color: black;
+            box-shadow: white 0 0 25px;
+            border-radius: 5px;
+            margin: 2rem;
+            padding: 1rem;
+            width: 25rem;
+            height: 35rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            a{
+                height: 20rem;
+                img{
+                    height: 20rem;
                 }
+            }
+            h2{
+                text-decoration: underline;
+                text-shadow: white 0 0 10px;
+            }
+            p{
+                grid-area: descripcion;
             }
         }
         .lechuDiv{
-            @extend .estiloCaja;
-            grid-template-areas: "lechu"
-            "descripcionLechu";
-            img{
-                grid-area: lechu;
-                height: 90%;
-                p{
-                    grid-area: descripcionLechu;
-                    }
+            border: 1px solid red;
+            background-color: black;
+            box-shadow: white 0 0 25px;
+            border-radius: 5px;
+            margin: 2rem;
+            padding: 1rem;
+            width: 25rem;
+            height: 35rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            a{
+                height: 20rem;
+                img{
+                height: 20rem;
+                }
+            }
+                h2{
+                    text-shadow: white 0 0 10px;
+                    text-decoration: underline;
                 }
             }
     }
