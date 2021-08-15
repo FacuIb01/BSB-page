@@ -59,8 +59,9 @@ header {
   justify-content: space-around;
   align-items: center;
   align-content: center; }
-  .letras .letras__div--h2 {
-    text-decoration: underline; }
+  .letras h2 {
+    text-decoration: underline;
+    text-shadow: white 0 0 10px; }
   .letras .letrasFlexBotones {
     width: 100%;
     height: 70%;
@@ -91,7 +92,6 @@ header {
   row-gap: 5rem;
   border-bottom: 1px red solid; }
   .conQuienTrabajamos .conQuienTrabajamosDiv {
-    overflow: hidden;
     width: 50%;
     height: 30rem;
     background-color: black;
@@ -116,7 +116,6 @@ header {
       align-items: center;
       padding: 1rem; }
   .conQuienTrabajamos .trabajaConNosotros {
-    overflow: hidden;
     width: 50%;
     height: 20rem;
     background-color: black;
@@ -130,6 +129,9 @@ header {
     align-items: center;
     align-content: center;
     row-gap: 2rem; }
+    .conQuienTrabajamos .trabajaConNosotros .h2TrabajaConNosotros {
+      text-decoration: underline;
+      text-shadow: white 0 0 8px; }
     .conQuienTrabajamos .trabajaConNosotros .contactanosLink {
       width: 15rem;
       height: 5rem;
@@ -164,7 +166,9 @@ header {
     padding: 1rem; }
     .contacto .divFormulario .contactanos {
       margin-top: .3rem;
-      text-align: center; }
+      text-align: center;
+      text-decoration: underline;
+      text-shadow: white 0 0 10px; }
     .contacto .divFormulario .formulario {
       display: grid;
       row-gap: .5rem;
@@ -213,10 +217,11 @@ header {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center; }
-    .contacto .contactoExtras ul {
-      justify-self: flex-start; }
-      .contacto .contactoExtras ul li {
-        list-style-type: none; }
+    .contacto .contactoExtras h2 {
+      text-decoration: underline;
+      text-shadow: white 0 0 10px; }
+    .contacto .contactoExtras ul li {
+      list-style-type: none; }
 
 footer {
   border-top: 1px solid red;
@@ -245,7 +250,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
   border-bottom: 1px solid red; }
   .galeria .galeriaDiv {
     margin: 2rem 0;
@@ -263,7 +267,8 @@ footer {
     box-shadow: white 0px 0px 25px;
     background-color: black; }
     .galeria .galeriaDiv .tituloGaleria h2 {
-      text-decoration: underline; }
+      text-decoration: underline;
+      text-shadow: white 0 0 10px; }
     .galeria .galeriaDiv .galeriaImagenes {
       margin-top: 1rem;
       width: 100%;
@@ -413,7 +418,10 @@ footer {
       text-decoration: underline;
       text-shadow: white 0 0 4px; }
     .error .errorDiv a img {
-      height: 200px; }
+      height: 200px;
+      transition: all .5s ease; }
+      .error .errorDiv a img:hover {
+        transform: translate(0, -10px); }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   header {
@@ -455,7 +463,6 @@ footer {
       box-shadow: white 0 0 25px; }
   .videos {
     height: 27rem;
-    flex-wrap: wrap;
     box-shadow: white 0px 10px 25px; }
     .videos .divVideos {
       margin-top: 0;
@@ -467,7 +474,7 @@ footer {
         height: 27rem; }
   .flechaMovile {
     width: 100%;
-    margin: 3rem auto;
+    margin: 2rem auto;
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -476,7 +483,7 @@ footer {
     align-items: center;
     align-content: center; }
     .flechaMovile a {
-      width: 100%; }
+      width: 5rem; }
       .flechaMovile a .colorFlecha {
         width: 100%;
         display: unset;
@@ -512,16 +519,13 @@ footer {
     width: 90%; }
   .conQuienTrabajamos .conQuienTrabajamosDiv {
     margin-top: 1rem;
-    width: 20rem;
-    padding: 0; }
+    width: 20rem; }
     .conQuienTrabajamos .conQuienTrabajamosDiv .conQuienTrabajamosLogo {
       margin: 0;
       width: 18rem; }
   .conQuienTrabajamos .trabajaConNosotros {
     width: 100%;
     margin-bottom: 1rem; }
-  footer {
-    height: 10rem; }
   .error .errorDiv {
     width: 90%;
     height: 90%; }
@@ -536,7 +540,9 @@ footer {
   .contacto {
     padding: 2rem; }
     .contacto .contactoExtras {
-      width: 100%; } }
+      width: 100%; }
+  footer {
+    height: 10rem; } }
 
 * {
   margin: 0px;

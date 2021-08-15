@@ -1,5 +1,4 @@
 @mixin estiloCajas ($altura) {
-    overflow: hidden;
     width: 50%;
     height: $altura;
     background-color: black;
@@ -51,6 +50,10 @@
         align-items: center;
         align-content: center;
         row-gap: 2rem;
+        .h2TrabajaConNosotros{
+            text-decoration: underline;
+            text-shadow: white 0 0 8px;
+        }
         .contactanosLink{
             width: 15rem;
             height: 5rem;

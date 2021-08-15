@@ -22,7 +22,6 @@
 
     .videos{
         height: 27rem;
-        flex-wrap: wrap;
         box-shadow: white 0px 10px 25px;
         .divVideos{
             margin-top: 0;
@@ -38,7 +37,7 @@
 
         .flechaMovile{
             width: 100%;
-            margin: 3rem auto;
+            margin: 2rem auto;
             height: 5rem;
             display: flex;
             flex-direction: row;
@@ -47,7 +46,7 @@
             align-items: center;
             align-content: center;
             a{
-                width: 100%;
+                width: 5rem;
                 .colorFlecha{
                     width: 100%;
                     display: unset;
@@ -60,6 +59,7 @@
                 }
             }
         }
+
 
     .letras{
         margin: 5rem auto;
@@ -102,13 +102,10 @@
     }
 
 
-
-
     .conQuienTrabajamos{
     .conQuienTrabajamosDiv{
         margin-top: 1rem;
         width: 20rem;
-        padding: 0;
             .conQuienTrabajamosLogo{
                 margin: 0;
                 width: 18rem;
@@ -120,9 +117,7 @@
         }
     }
     
-    footer{
-        height: 10rem;
-    }
+
 
     .error{
         .errorDiv{
@@ -134,6 +129,7 @@
         }
     }
 
+    
     .galeria{
         .galeriaDiv{
             .galeriaImagenes{
@@ -149,10 +145,18 @@
             }
         }
     }
+
+
     .contacto{
         padding: 2rem;
         .contactoExtras{
             width: 100%;
         }
     }
+
+
+    footer{
+        height: 10rem;
+    }
+
 }

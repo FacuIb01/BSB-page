@@ -53,8 +53,9 @@ $botonesLetras: map-get($anchos, botonesLetras);
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    .letras__div--h2{
+    h2{
         text-decoration: underline;
+        text-shadow: white 0 0 10px;
     }
     .letrasFlexBotones{
         width: 100%;

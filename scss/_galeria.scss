@@ -7,7 +7,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align:center;
     border-bottom: 1px solid red;
     .galeriaDiv{
         margin: 2rem 0;
@@ -27,6 +26,7 @@
         .tituloGaleria{
             h2{
                 text-decoration: underline;
+                text-shadow: white 0 0 10px;
             }
         }
         .galeriaImagenes{

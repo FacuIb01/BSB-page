@@ -20,6 +20,10 @@
         }
         a img{
             height: 200px;
+            transition: all .5s ease;
+            &:hover{
+                transform: translate(0, -10px);
+            }
         }
     }
 }
