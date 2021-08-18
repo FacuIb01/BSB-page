@@ -181,6 +181,7 @@ header {
       .contacto .divFormulario .formulario .apellido {
         grid-area: apellido; }
       .contacto .divFormulario .formulario .email {
+        margin-left: .2rem;
         grid-area: email; }
       .contacto .divFormulario .formulario .oferta {
         grid-area: oferta; }
@@ -295,22 +296,6 @@ footer {
           height: 20rem; }
         .galeria .galeriaDiv .galeriaImagenes div .achicarImg {
           width: 14rem; }
-
-.estiloCaja {
-  border: 1px solid red;
-  background-color: black;
-  box-shadow: white 0 0 25px;
-  border-radius: 5px;
-  margin: 2rem;
-  padding: 1rem;
-  width: 25rem;
-  height: 35rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70% 30%;
-  justify-items: center;
-  align-items: center;
-  align-content: center; }
 
 .quienesSomos {
   width: 100%;
